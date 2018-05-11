@@ -45,5 +45,10 @@ public class CelloTest {
         assertEquals("S-C-R-A-P-E!!!", cello.play());
     }
 
+    @Test
+    public void canGetMarkUp(){
+        assertEquals(20.00, cello.markUp(), 0.01);
+    }
+
 
 }

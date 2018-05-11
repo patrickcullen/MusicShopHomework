@@ -1,8 +1,9 @@
 package Instruments;
 
 import Behaviours.Playable;
+import Behaviours.Sellable;
 
-public class Trombone extends Instrument implements Playable {
+public class Trombone extends Instrument implements Playable, Sellable {
 
 
     int numberOfValves;
@@ -18,5 +19,10 @@ public class Trombone extends Instrument implements Playable {
 
     public String play(){
         return "P-A-R-P!!!";
+    }
+
+    public double markUp(){
+        double markUp = getSalePrice() - getPurchasePrice();
+        return markUp;
     }
 }

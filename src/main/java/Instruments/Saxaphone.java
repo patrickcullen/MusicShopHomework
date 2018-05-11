@@ -1,8 +1,9 @@
 package Instruments;
 
 import Behaviours.Playable;
+import Behaviours.Sellable;
 
-public class Saxaphone extends Instrument implements Playable{
+public class Saxaphone extends Instrument implements Playable, Sellable {
 
     int numberOfReeds;
 
@@ -19,4 +20,11 @@ public class Saxaphone extends Instrument implements Playable{
     public String play(){
         return "W-A-I-L!!!";
     }
+
+    public double markUp(){
+        double markUp = getSalePrice() - getPurchasePrice();
+        return markUp;
+    }
+
+
 }

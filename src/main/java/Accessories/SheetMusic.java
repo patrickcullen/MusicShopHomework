@@ -1,8 +1,9 @@
 package Accessories;
 
+import Behaviours.Sellable;
 import Master.Item;
 
-public class SheetMusic extends Item{
+public class SheetMusic extends Item implements Sellable {
 
     String publisher;
 
@@ -13,5 +14,10 @@ public class SheetMusic extends Item{
 
     public String getPublisher() {
         return publisher;
+    }
+
+    public double markUp(){
+        double markUp = getSalePrice() - getPurchasePrice();
+        return markUp;
     }
 }

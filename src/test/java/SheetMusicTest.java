@@ -32,4 +32,9 @@ public class SheetMusicTest {
     public void canGetPublisher(){
         assertEquals("Naxos", sheetMusic.getPublisher());
     }
+
+    @Test
+    public void canGetMarkUp(){
+        assertEquals(15.00, sheetMusic.markUp(), 0.01);
+    }
 }

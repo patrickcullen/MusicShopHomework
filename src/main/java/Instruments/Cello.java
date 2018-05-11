@@ -1,8 +1,9 @@
 package Instruments;
 
 import Behaviours.Playable;
+import Behaviours.Sellable;
 
-public class Cello extends Instrument implements Playable{
+public class Cello extends Instrument implements Playable, Sellable {
 
     int numberOfEndpins;
 
@@ -18,5 +19,10 @@ public class Cello extends Instrument implements Playable{
 
     public String play(){
         return "S-C-R-A-P-E!!!";
+    }
+
+    public double markUp(){
+        double markUp = getSalePrice() - getPurchasePrice();
+        return markUp;
     }
 }

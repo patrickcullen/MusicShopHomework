@@ -1,8 +1,9 @@
 package Accessories;
 
+import Behaviours.Sellable;
 import Master.Item;
 
-public class ClarinetReed extends Item {
+public class ClarinetReed extends Item implements Sellable {
 
     String material;
     int itemsInPackage;
@@ -19,5 +20,10 @@ public class ClarinetReed extends Item {
 
     public int getItemsInPackage() {
         return itemsInPackage;
+    }
+
+    public double markUp(){
+        double markUp = getSalePrice() - getPurchasePrice();
+        return markUp;
     }
 }

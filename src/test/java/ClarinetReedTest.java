@@ -37,4 +37,9 @@ public class ClarinetReedTest {
     public void canGetItemsInPackage(){
         assertEquals(3, clarinetReed.getItemsInPackage());
     }
+
+    @Test
+    public void canGetMarkUp(){
+        assertEquals(4.00, clarinetReed.markUp(), 0.01);
+    }
 }

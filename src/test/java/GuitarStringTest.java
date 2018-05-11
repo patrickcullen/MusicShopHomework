@@ -10,7 +10,7 @@ public class GuitarStringTest {
 
     @Before
     public void before(){
-        guitarString = new GuitarString("Gibson Masterbuilt Premium", 10.00, 5.00, "Acoustic");
+        guitarString = new GuitarString("Gibson Masterbuilt Premium", 10.00, 15.00, "Acoustic");
     }
 
     @Test
@@ -25,12 +25,17 @@ public class GuitarStringTest {
 
     @Test
     public void canGetSalePrice(){
-        assertEquals(5.00, guitarString.getSalePrice(),0.01);
+        assertEquals(15.00, guitarString.getSalePrice(),0.01);
     }
 
     @Test
     public void canGetStringType(){
         assertEquals("Acoustic", guitarString.getStringType());
+    }
+
+    @Test
+    public void canGetMarkUp(){
+        assertEquals(5.00, guitarString.markUp(), 0.01);
     }
 
 }

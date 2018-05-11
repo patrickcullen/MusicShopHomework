@@ -33,4 +33,9 @@ public class TromboneTest {
     public void canPlay(){
         assertEquals("P-A-R-P!!!", trombone.play());
     }
+
+    @Test
+    public void canGetMarkUp(){
+        assertEquals(134.00, trombone.markUp(), 0.01);
+    }
 }
