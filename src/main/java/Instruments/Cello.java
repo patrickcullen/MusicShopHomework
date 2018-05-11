@@ -2,21 +2,17 @@ package Instruments;
 
 import Behaviours.Playable;
 
-public class Cello implements Playable{
+public class Cello extends Instrument implements Playable{
 
-    String description;
     int numberOfEndpins;
 
-    public Cello(String description, int endpin) {
-        this.description = description;
-        this.numberOfEndpins = endpin;
+    public Cello(String description, double purchasePrice, double salePrice, String instrumentType, String countryOfOrigin, int numberOfEndpins) {
+        super(description, purchasePrice, salePrice, instrumentType, countryOfOrigin);
+        this.numberOfEndpins = numberOfEndpins;
     }
 
-    public String getDescription() {
-        return description;
-    }
 
-    public int getEndpin() {
+    public int getNumberOfEndpins() {
         return numberOfEndpins;
     }
 

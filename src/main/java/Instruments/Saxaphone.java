@@ -2,24 +2,20 @@ package Instruments;
 
 import Behaviours.Playable;
 
-public class Saxaphone implements Playable{
+public class Saxaphone extends Instrument implements Playable{
 
-    String description;
     int numberOfReeds;
 
-    public Saxaphone(String description, int numberOfReeds) {
-        this.description = description;
+    public Saxaphone(String description, double purchasePrice, double salePrice, String instrumentType, String countryOfOrigin, int numberOfReeds) {
+        super(description, purchasePrice, salePrice, instrumentType, countryOfOrigin);
         this.numberOfReeds = numberOfReeds;
-    }
-
-    public String getDescription() {
-        return description;
     }
 
     public int getNumberOfReeds() {
         return numberOfReeds;
     }
 
+//  Interface: Playable Method
     public String play(){
         return "W-A-I-L!!!";
     }

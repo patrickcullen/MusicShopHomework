@@ -2,18 +2,14 @@ package Instruments;
 
 import Behaviours.Playable;
 
-public class Trombone implements Playable {
+public class Trombone extends Instrument implements Playable {
 
-    String description;
+
     int numberOfValves;
 
-    public Trombone(String description, int numberOfValves) {
-        this.description = description;
+    public Trombone(String description, double purchasePrice, double salePrice, String instrumentType, String countryOfOrigin, int numberOfValves) {
+        super(description, purchasePrice, salePrice, instrumentType, countryOfOrigin);
         this.numberOfValves = numberOfValves;
-    }
-
-    public String getDescription() {
-        return description;
     }
 
     public int getNumberOfValves() {
