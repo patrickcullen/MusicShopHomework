@@ -1,6 +1,8 @@
 package Master;
 
-public abstract class Item {
+import Behaviours.Sellable;
+
+public abstract class Item implements Sellable{
 
     String description;
     double purchasePrice;
