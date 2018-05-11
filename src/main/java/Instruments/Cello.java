@@ -6,7 +6,7 @@ public class Cello extends Instrument implements Playable{
 
     int numberOfEndpins;
 
-    public Cello(String description, double purchasePrice, double salePrice, String instrumentType, String countryOfOrigin, int numberOfEndpins) {
+    public Cello(String description, double purchasePrice, double salePrice, InstrumentType instrumentType, String countryOfOrigin, int numberOfEndpins) {
         super(description, purchasePrice, salePrice, instrumentType, countryOfOrigin);
         this.numberOfEndpins = numberOfEndpins;
     }

@@ -6,7 +6,7 @@ public class Saxaphone extends Instrument implements Playable{
 
     int numberOfReeds;
 
-    public Saxaphone(String description, double purchasePrice, double salePrice, String instrumentType, String countryOfOrigin, int numberOfReeds) {
+    public Saxaphone(String description, double purchasePrice, double salePrice, InstrumentType instrumentType, String countryOfOrigin, int numberOfReeds) {
         super(description, purchasePrice, salePrice, instrumentType, countryOfOrigin);
         this.numberOfReeds = numberOfReeds;
     }

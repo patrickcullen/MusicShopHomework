@@ -1,6 +1,17 @@
 package Accessories;
 
-public class SheetMusic {
+import Master.Item;
 
+public class SheetMusic extends Item{
 
+    String publisher;
+
+    public SheetMusic(String description, double purchasePrice, double salePrice, String publisher) {
+        super(description, purchasePrice, salePrice);
+        this.publisher = publisher;
+    }
+
+    public String getPublisher() {
+        return publisher;
+    }
 }

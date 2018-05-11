@@ -1,4 +1,5 @@
 import Instruments.Cello;
+import Instruments.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,9 +9,15 @@ public class CelloTest {
 
     Cello cello;
 
+
     @Before
     public void before(){
-       cello = new Cello("Eastman Strings VC305", 20.00, 40.00, "String", "USA",  1);
+       cello = new Cello("Eastman Strings VC305", 20.00, 40.00, InstrumentType.STRING, "USA",  1);
+    }
+
+    @Test
+    public void hasInstrumentType() {
+        assertEquals(InstrumentType.STRING, cello.getInstrumentType());
     }
 
     @Test

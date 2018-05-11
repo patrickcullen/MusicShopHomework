@@ -1,4 +1,5 @@
 import Behaviours.Playable;
+import Instruments.InstrumentType;
 import Instruments.Saxaphone;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,12 +12,12 @@ public class SaxaphoneTest {
 
     @Before
     public void before(){
-        saxaphone = new Saxaphone("Yamaha YAS280", 50.00, 100.00, "Woodwind", "Japan", 2);
+        saxaphone = new Saxaphone("Yamaha YAS280", 50.00, 100.00, InstrumentType.WOODWIND , "Japan", 2);
     }
 
     @Test
     public void canGetInstrumentType(){
-        assertEquals("Woodwind", saxaphone.getInstrumentType());
+        assertEquals(InstrumentType.WOODWIND, saxaphone.getInstrumentType());
     }
 
     @Test
