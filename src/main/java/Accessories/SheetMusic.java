@@ -3,7 +3,7 @@ package Accessories;
 import Behaviours.Sellable;
 import Master.Item;
 
-public class SheetMusic extends Item implements Sellable {
+public class SheetMusic extends Item {
 
     String publisher;
 

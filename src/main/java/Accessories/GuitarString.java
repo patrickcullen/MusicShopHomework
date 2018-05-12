@@ -3,7 +3,7 @@ package Accessories;
 import Behaviours.Sellable;
 import Master.Item;
 
-public class GuitarString extends Item implements Sellable{
+public class GuitarString extends Item{
 
     String stringType;
 

@@ -3,7 +3,7 @@ package Instruments;
 import Behaviours.Playable;
 import Behaviours.Sellable;
 
-public class Cello extends Instrument implements Playable, Sellable {
+public class Cello extends Instrument implements Playable{
 
     int numberOfEndpins;
 

@@ -3,7 +3,7 @@ package Accessories;
 import Behaviours.Sellable;
 import Master.Item;
 
-public class ClarinetReed extends Item implements Sellable {
+public class ClarinetReed extends Item {
 
     String material;
     int itemsInPackage;
